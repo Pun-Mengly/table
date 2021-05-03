@@ -132,7 +132,8 @@ class _HomePageState extends State<DataTables> {
                           ),
                           onPressed: () {
                             setState(() {
-                              _delete(2);
+                              int index = _products.indexOf(item);
+                              _delete(index);
                             });
                             print('deleted');
                           },
